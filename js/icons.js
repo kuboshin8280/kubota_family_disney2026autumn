@@ -1,0 +1,38 @@
+// オリジナルのラインアイコン（24x24, stroke=currentColor）
+const P = {
+  home: '<path d="M3 11l9-7 9 7"/><path d="M5 10v10h14V10"/><path d="M10 20v-6h4v6"/>',
+  station: '<rect x="5" y="3" width="14" height="13" rx="3"/><path d="M5 10h14"/><circle cx="9" cy="13" r=".8"/><circle cx="15" cy="13" r=".8"/><path d="M8 20l2-4M16 20l-2-4"/>',
+  train: '<rect x="5" y="3" width="14" height="13" rx="4"/><path d="M5 9h14"/><path d="M9 3v6M15 3v6"/><path d="M7 20l2-4M17 20l-2-4"/>',
+  pin: '<path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/>',
+  dinner: '<path d="M7 3v8a2 2 0 0 0 4 0V3"/><path d="M9 11v10"/><path d="M16 3c-1.5 1.5-2 4-2 6s1 3 2 3v9"/>',
+  bag: '<path d="M5 8h14l-1 13H6L5 8z"/><path d="M9 8V6a3 3 0 0 1 6 0v2"/>',
+  monorail: '<path d="M3 6h18"/><rect x="4" y="8" width="16" height="8" rx="4"/><path d="M8 11h2M14 11h2"/><path d="M8 16l-1 3M16 16l1 3"/>',
+  hotel: '<path d="M4 21V5l8-2 8 2v16"/><path d="M9 21v-4h6v4"/><path d="M8 8h2M14 8h2M8 12h2M14 12h2"/>',
+  bath: '<path d="M4 12h16v3a5 5 0 0 1-5 5H9a5 5 0 0 1-5-5v-3z"/><path d="M6 12V6a2 2 0 0 1 4 0"/><path d="M13 5c.5 1 .5 2 0 3M16 5c.5 1 .5 2 0 3"/>',
+  phone: '<rect x="7" y="2" width="10" height="20" rx="2.5"/><path d="M11 18h2"/>',
+  moon: '<path d="M20 14.5A8 8 0 1 1 9.5 4a6.5 6.5 0 0 0 10.5 10.5z"/><path d="M17 4l.5 1.5L19 6l-1.5.5L17 8l-.5-1.5L15 6l1.5-.5z"/>',
+  sun: '<circle cx="12" cy="13" r="4"/><path d="M12 3v2M4.5 6.5l1.4 1.4M19.5 6.5l-1.4 1.4M2 13h2M20 13h2"/><path d="M3 20h18"/>',
+  door: '<path d="M6 21V3h10v18"/><path d="M16 5h2v16"/><circle cx="13" cy="12" r=".9"/><path d="M3 21h18"/>',
+  walk: '<circle cx="13" cy="4" r="2"/><path d="M11 21l2-6-3-3 1-4 4 3 3 1"/><path d="M10 8l-3 2v3"/><path d="M13 15l3 6"/>',
+  gate: '<path d="M3 21V9a9 9 0 0 1 18 0v12"/><path d="M7 21v-9a5 5 0 0 1 10 0v9"/><path d="M12 2v2"/>',
+  rice: '<path d="M12 4L4 18h16L12 4z"/><path d="M8 12h8v6H8z"/>',
+  hourglass: '<path d="M6 3h12M6 21h12"/><path d="M7 3c0 5 10 5 10 9s-10 4-10 9"/><path d="M17 3c0 5-10 5-10 9"/>',
+  star: '<path d="M12 3l2.7 5.6 6.1.9-4.4 4.3 1 6.1L12 17l-5.4 2.9 1-6.1-4.4-4.3 6.1-.9z"/>',
+  ticket: '<path d="M3 8a2 2 0 0 0 0 4v0a2 2 0 0 1 0 4v2h18v-2a2 2 0 0 1 0-4 2 2 0 0 1 0-4V6H3z"/><path d="M14 6v12" stroke-dasharray="2 2"/>',
+  lantern: '<path d="M9 5h6l2 3v7l-2 3H9l-2-3V8z"/><path d="M12 2v3M10 21h4M12 18v3"/><path d="M7 11.5h10"/>',
+  balloon: '<path d="M12 2a7 7 0 0 0-7 7c0 4 4 7 5 8h4c1-1 5-4 5-8a7 7 0 0 0-7-7z"/><path d="M12 2c-2 2-3 4.5-3 7s1.5 6 1 8M12 2c2 2 3 4.5 3 7s-1.5 6-1 8"/><rect x="10" y="19" width="4" height="3" rx=".5"/>',
+  compass: '<circle cx="12" cy="12" r="9"/><path d="M15.5 8.5l-2 5-5 2 2-5z"/>',
+  fireworks: '<path d="M12 12l-4-6M12 12l4-6M12 12l-6 1M12 12l6 1M12 12l-3 6M12 12l3 6M12 12v-8"/><circle cx="12" cy="12" r="1"/>',
+  link: '<path d="M10 14a4 4 0 0 0 5.7 0l3-3a4 4 0 0 0-5.7-5.7l-1 1"/><path d="M14 10a4 4 0 0 0-5.7 0l-3 3a4 4 0 0 0 5.7 5.7l1-1"/>',
+  ext: '<path d="M14 4h6v6"/><path d="M20 4l-9 9"/><path d="M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"/>',
+  clock: '<circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/>',
+  alert: '<path d="M12 3l10 18H2z"/><path d="M12 10v5M12 18v.5"/>',
+  cloud: '<path d="M7 18a4 4 0 0 1-.5-8A6 6 0 0 1 18 9a4.5 4.5 0 0 1-.5 9z"/>',
+  call: '<path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/>',
+  ship: '<path d="M3 16l2 4h14l2-4z"/><path d="M12 3v13"/><path d="M12 4l6 9h-6"/><path d="M12 6l-5 7h5"/>',
+  map: '<path d="M9 4L3 6v14l6-2 6 2 6-2V4l-6 2z"/><path d="M9 4v14M15 6v14"/>',
+  check: '<path d="M5 12l5 5 9-10"/>',
+};
+
+export const icon = (name, cls = 'ico') =>
+  `<svg class="${cls}" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${P[name] || P.star}</svg>`;
